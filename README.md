@@ -88,7 +88,7 @@ int posicion(int i, int c, int d) {
   if (i == HIGH && c == HIGH && d == LOW) return 500;  // Detectan los sensores izquierdo y del medio
   if (i == HIGH && c == LOW && d == HIGH) return 1000; // Detectan los sensores izquierdo y derecho (mantener recto)
   if (i == LOW && c == LOW && d == LOW) return 1000;   // Ningún sensor detecta (mantener recto)
-  return 1000                                      	// Todos los sensores detectan (mantener recto)
+  return 1000;                                      	// Todos los sensores detectan (mantener recto)
 }
 
 ```
